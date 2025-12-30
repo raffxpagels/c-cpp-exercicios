@@ -10,7 +10,7 @@
 int idade;
 
 int main() {
-    setlocale(LC_ALL, "Portuguese");
+    setlocale(LC_ALL, "PORTUGUESE");
 
     printf("Informe a sua idade: ");
     scanf("%d", &idade);
@@ -29,5 +29,6 @@ int main() {
 
     return 0;
 }
+
 
 
