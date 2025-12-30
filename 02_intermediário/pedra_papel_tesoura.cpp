@@ -1,7 +1,7 @@
 /*
 * Programa em C/C++
 * O clássico jogo de pedra, papel e tesoura
-* Conteúdo: número randômico (srand), switch-if, estatisticas da partida
+* Conteúdo: número randômico (srand), switch-case, estatisticas da partida
 */
 
 
@@ -114,6 +114,7 @@ int main() {
 	printf("Número de empates: %i\n", empate);
 	return 0;
 }
+
 
 
 
