@@ -1,3 +1,9 @@
+/*
+ * Programa em C/C++
+ * Programa feito para controle de produtos de uma confraterniza√ß√£o
+ * Conte√∫dos: struct, switch-if, la√ßos de repeti√ß√£o
+*/ 
+
 #include <stdio.h>
 #include <locale.h>
 #include <ctype.h>
@@ -22,7 +28,7 @@ int main (){
     
     do {
         system ("cls");
-        printf ("ConfraternizaÁ„o | MENU\n\n");
+        printf ("Confraterniza√ß√£o | MENU\n\n");
         
         printf ("1 - Incluir um produto\n");
         printf ("2 - Alterar um produto\n");
@@ -36,7 +42,7 @@ int main (){
             case 1:
                 
                 if (i >= 15){
-                    printf ("\nA lista de produtos est· cheia. Exclua algum para inserir outro!\n");
+                    printf ("\nA lista de produtos est√° cheia. Exclua algum para inserir outro!\n");
                     system ("pause");
                     break;
                 }
@@ -53,12 +59,12 @@ int main (){
                         scanf ("%i", &produto[i].idProduto);
                         
                         if (produto[i].idProduto == 0){
-                            printf ("Por favor, insira um n˙mero que n„o seja nulo (zero).");
+                            printf ("Por favor, insira um n√∫mero que n√£o seja nulo (zero).");
                         }
                         
                     } while (produto[i].idProduto == 0);
                     
-                    printf ("Digite o preÁo do produto: \n");
+                    printf ("Digite o pre√ßo do produto: \n");
                     fflush(stdin);
                     scanf ("%f", &produto[i].precoProduto);
                     printf ("Digite a quantidade do produto: \n");
@@ -85,7 +91,7 @@ int main (){
                         printf ("\nDigite o nome do produto: \n");
                         fflush(stdin);
                         gets (produto[contador].nomeProduto);
-                        printf ("Digite o preÁo do produto: \n");
+                        printf ("Digite o pre√ßo do produto: \n");
                         scanf ("%f", &produto[contador].precoProduto);
                         printf ("Digite a quantidade do produto: \n");
                         scanf ("%d", &produto[contador].qntdProduto);
@@ -95,7 +101,7 @@ int main (){
                 }   
 				
                 if (flag == 0){
-                    printf ("\nProduto n„o encontrado. Tente novamente!");
+                    printf ("\nProduto n√£o encontrado. Tente novamente!");
                     system ("pause");
                 }
             break;
@@ -113,19 +119,19 @@ int main (){
                         flag = 1;
                         printf ("\nNome do produto: %s", produto[contador].nomeProduto);
                         printf ("\nID do produto: %d", produto[contador].idProduto);
-                        printf ("\nPreÁo do produto: %.2f", produto[contador].precoProduto);
+                        printf ("\nPre√ßo do produto: %.2f", produto[contador].precoProduto);
                         printf ("\nQuantidade do produto: %d", produto[contador].qntdProduto);
                         
-                        printf ("\nDeseja mesmo excluir esse Ìtem?\n S | N: ");
+                        printf ("\nDeseja mesmo excluir esse √≠tem?\n S | N: ");
                         scanf (" %c", &resposta);
                         
                         if (toupper(resposta) == 'S'){
-                            strcpy (produto[contador].nomeProduto, "ExcluÌdo");
+                            strcpy (produto[contador].nomeProduto, "Exclu√≠do");
                             produto[contador].idProduto = 0;
                             produto[contador].precoProduto = 0;
                             produto[contador].qntdProduto = 0;
                             
-                            printf ("O produto foi excluÌdo com sucesso.");
+                            printf ("O produto foi exclu√≠do com sucesso.");
                             system ("pause");
                             break;
                         }
@@ -133,7 +139,7 @@ int main (){
                 }
                 
                 if (flag == 0){
-                    printf ("\nO produto n„o foi encontrado. Tente novamente.");
+                    printf ("\nO produto n√£o foi encontrado. Tente novamente.");
                     system ("pause");
                 }
             break;
@@ -158,10 +164,11 @@ int main (){
                 break;    
             
             default:
-                printf ("OpÁ„o inv·lida. Digite uma opÁ„o entre 1 e 5.");
+                printf ("Op√ß√£o inv√°lida. Digite uma op√ß√£o entre 1 e 5.");
                 system ("pause");
             break;
         }        
     } while (opcao != 5);
 }
+
 
