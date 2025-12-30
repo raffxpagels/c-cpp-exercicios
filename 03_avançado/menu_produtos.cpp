@@ -1,7 +1,7 @@
 /*
  * Programa em C/C++
  * Programa feito para controle de produtos de uma confraternização
- * Conteúdos: struct, switch-if, laços de repetição
+ * Conteúdos: struct, switch-case, laços de repetição
 */ 
 
 #include <stdio.h>
@@ -171,6 +171,7 @@ int main (){
     } while (opcao != 5);
 	return 0;
 }
+
 
 
 
