@@ -169,6 +169,8 @@ int main (){
             break;
         }        
     } while (opcao != 5);
+	return 0;
 }
+
 
 
