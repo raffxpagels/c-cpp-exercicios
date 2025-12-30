@@ -1,21 +1,23 @@
 /*
 * Programa em C/C++
-* Identifica o maior número do vetor
-* Conteúdo: Vetores e laço de repetição
+* Identifica o maior nÃºmero do vetor
+* ConteÃºdo: Vetores e laÃ§o de repetiÃ§Ã£o
 */
 
 #include <stdio.h>
+#include <locale.h>
 
 int main() {
     int nmr[10];
     int maior_nmr, indice_maior;
-
+    setlocale (LC_ALL, "PORTUGUESE);
+        
     	for (int i = 0; i < 10; i++) {
         	do {
-            	printf("Entre com o numero positivo: ");
+            	printf("Entre com o nÃºmero positivo: ");
             	scanf("%d", &nmr[i]);
             	if (nmr[i] < 0)
-                	printf("Numero invalido! Digite apenas positivos.\n");
+                	printf("NÃºmero invalido! Digite apenas positivos.\n");
         	} while (nmr[i] < 0);
     	}
 
@@ -29,8 +31,9 @@ int main() {
         	}
     	}
 
-    printf("\nO maior numero digitado e %d no indice %d.\n", maior_nmr, indice_maior);
+    printf("\nO maior nÃºmero digitado Ã© %d no indice %d.\n", maior_nmr, indice_maior);
 
     return 0;
 }
+
 
