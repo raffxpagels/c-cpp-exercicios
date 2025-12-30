@@ -1,5 +1,5 @@
 /* 
-* Programa básico em C
+* Programa básico em C/C++
 * Calcula a média do aluno
 * Conteúdo: entrada/saída, variáveis, if/else
 */
@@ -26,4 +26,5 @@ int main (){
 		
 	return 0;	
 }
+
 
