@@ -1,7 +1,7 @@
 /*
  * Programa em C/C++
- * Exibe a tabuada de um número escolhido pelo usuário (1 a 10)
- * Conteúdo: entrada de dados, for, validação
+ * Exibe a tabuada de um nÃºmero escolhido pelo usuÃ¡rio (1 a 10)
+ * ConteÃºdo: entrada de dados, laÃ§o de repetiÃ§Ã£o for
  */
 
 #include <stdio.h>
@@ -12,11 +12,11 @@ int numero, contador;
 int main (){
     setlocale(LC_ALL, "PORTUGUESE");
 
-    printf("Digite um número para ver a tabuada: ");
+    printf("Digite um nÃºmero para ver a tabuada: ");
     scanf("%d", &numero);
 
     	if (numero < 1) {
-        	printf("Número inválido.\n");
+        	printf("NÃºmero invÃ¡lido.\n");
         	return 0;
     	}
 
@@ -28,4 +28,5 @@ int main (){
 
     return 0;
 }
+
 
