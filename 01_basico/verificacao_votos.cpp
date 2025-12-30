@@ -1,5 +1,5 @@
 /*
- * Programa básico em C
+ * Programa básico em C/C++
  * Verifica a obrigatoriedade do voto com base na idade
  * Conteúdos: if/else, operadores lógicos, entrada de dados
  */
@@ -29,4 +29,5 @@ int main() {
 
     return 0;
 }
+
 
