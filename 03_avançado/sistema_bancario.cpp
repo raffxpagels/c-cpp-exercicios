@@ -1,3 +1,10 @@
+/*
+ * Programa em C/C++
+ * Programa feito semelhante à um sistema bancário
+ * Conteúdos: struct, switch-if, laços de repetição
+*/ 
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -138,4 +145,5 @@ int main() {
 
     return 0;
 }
+
 
