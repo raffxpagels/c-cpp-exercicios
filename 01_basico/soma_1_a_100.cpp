@@ -1,5 +1,5 @@
 /*
-* Programa básico em C
+* Programa básico em C/C++
 * Calcula a soma de todos os números de 1 a 100
 * Conteúdo: for, variáveis, acumulador
 */
@@ -22,3 +22,4 @@ int main (){
 	printf ("O resultado final é de %d", soma);
 	return 0;	
 }
+
